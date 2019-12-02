@@ -11,7 +11,6 @@ import org.testng.annotations.BeforeClass;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.remote.AutomationName;
 
 public class BaseClass {
 	
@@ -40,12 +39,10 @@ public class BaseClass {
 			System.out.println(e.getMessage());
 		}
 	}
-
 	
 	@AfterClass
 	public void teardown() 
 	{
 		driver.quit();
 	}
-
 }

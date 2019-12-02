@@ -1,6 +1,5 @@
 package testScripts;
 
-import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 import commonUtils.BaseClass;
@@ -14,7 +13,7 @@ public class Customer extends BaseClass {
 	public void customerModuleDisplayed() throws InterruptedException 
 	{
 		cpo = new CustomerPO(driver);
-		System.out.println("Customer module displayed?"+" "+cpo.customer.isDisplayed());
+		System.out.println("Customer module displayed?"+" "+cpo.customer_module.isDisplayed());
 //		cpo.customer.click();
 		
 	}	
@@ -22,7 +21,7 @@ public class Customer extends BaseClass {
 	@Test(priority=2)
 	public void customerButton() throws InterruptedException
 	{
-		cpo.customer.click();
+		cpo.customer_module.click();
 		Thread.sleep(5000);
 	}
 		

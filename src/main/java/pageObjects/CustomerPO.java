@@ -15,6 +15,9 @@ public class CustomerPO {
     }
 
 	@AndroidFindBy(xpath = "//android.widget.Button[contains(@text,'CustomerButton')]")
-	public AndroidElement customer;
+	public AndroidElement customer_module;
+	
+	@AndroidFindBy(xpath = "//android.view.View//android.widget.EditText")
+	public AndroidElement quick_search;
 	
 }
